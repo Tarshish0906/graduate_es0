@@ -51,11 +51,11 @@ function draw() {
     for (let i = 0; i < poses.length; i++) {
       // poseが持つ情報を出力
       let pose = poses[i].pose;
-      // console.log('全体の精度' + pose.score);
-      // console.log('nose' + pose.nose.x);
-      // console.log('nose' + pose.nose.y);
+      // console.log("全体の精度" + pose.score);
+      // console.log("nose" + pose.nose.x);
+      // console.log("nose" + pose.nose.y);
       if (pose.score >= 0.6) {
-        // console.log("ok");
+        console.log("ok");
         if (pose.nose.y >= 250.0 && should_count) {
           console.log(pose.nose.y);
           count_value += 1;
@@ -69,7 +69,7 @@ function draw() {
           should_count = true;
         }
         if (count_value == 10) {
-          document.getElementById("disp_count").style.color = "#FF0000";
+          document.getElementById("disp_count").style.color = "#F36C21";
         }
       }
     }

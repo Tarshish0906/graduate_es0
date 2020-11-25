@@ -53,7 +53,7 @@ div {
   padding-bottom: 10px;
   text-align: center;
   border: 1px solid #e2e3cb;
-  background-image: url(/image/twitter.png);
+  background-image: none;
   background-color: #e8dabe;
   width: 290px;
   float: left;
